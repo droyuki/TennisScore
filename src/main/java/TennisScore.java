@@ -1,10 +1,8 @@
-/**
- * Created by WeiChen on 2015/7/31.
- */
 public class TennisScore {
 
     public int[] score = {0, 0};
     public int[] game = {0, 0};
+    public String winner;
 
     public void getPoint(int i) {
         int index = i == 0 ? 1 : 0;
@@ -35,5 +33,11 @@ public class TennisScore {
             tennisScore = "AD";
         }
         return tennisScore;
+    }
+
+    public void getGame(int i) {
+        game[i]++;
+        if (game[i] == 3)
+            winner = i == 0 ? "A" : "B";
     }
 }

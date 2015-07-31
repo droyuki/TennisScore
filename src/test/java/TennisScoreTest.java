@@ -1,9 +1,7 @@
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by WeiChen on 2015/7/31.
- */
 
 public class TennisScoreTest {
     @Test
